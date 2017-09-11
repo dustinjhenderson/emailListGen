@@ -1,7 +1,7 @@
 #Parce CSV
 
 import csv		#imports libraries used to read the csv files
-import codecs 	#import codecs library to decode csv
+#import codecs 	#import codecs library to decode csv
 #import string
 
 def parsCsv(csvLocation):
