@@ -1,0 +1,18 @@
+
+cvs_list=["ezgi@gmail.com", "dustin@gmail.com"];
+file = open('test.text', 'r') #read existing email file
+print file.read() 
+email_list = file.split(';') #create email list file
+for i in cvs_list
+  if i is not in email_list
+    email_list.append(i)
+    
+with open ('test.txt', 'w') as out:
+    out.write(';'.join([str(n) for n in email_list]))
+  
+
+
+
+
+
+
