@@ -12,9 +12,9 @@ from Tkinter import *
 
 
 root = Tkinter.Tk()
-T = Text(root, height=6, width=80)
+T = Text(root, height=6, width=100)
 T.pack()
-T.insert(END, "Welcome to email generator!\n\n\n\nPlease upload your file and select a directory for your updated email address.\n")
+T.insert(END, "Welcome to email generator!\n\n\n\nPlease upload your .cvs file and select a directory to download your updated email address list.\n")
 T.tag_add("color1", "1.0", "10.0")
 T.tag_config("color1",background="black",foreground="green")
 
