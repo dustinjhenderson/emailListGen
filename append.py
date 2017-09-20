@@ -11,8 +11,9 @@ def append(cvs_list): #gets list of emails from cvs file
 	except:
 		open(directory+'/email_List.txt','a').close
 	for i in cvs_list:
-	  if i not in email_list:  #if the email is not added before
-		email_list.append(i)
+	  if i not in email_list:	#if the email is not added before
+	  	if '@intel.com' in i: 
+			email_list.append(i)
 	with open (directory+'/email_List.txt', 'w') as out:  #update the email list
 		out.write(';'.join([str(n) for n in email_list])) #create the updated text file
 	tkMessageBox.showinfo("Confirmation", "Your email list is successfully downloaded to "+ directory)
